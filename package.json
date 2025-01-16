@@ -1,0 +1,32 @@
+{
+  "name": "website-tests-demo",
+  "version": "0.0.1",
+  "description": "Example website for workshop demo on how to run tests on GitHub",
+  "author": "People and Code",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . && prettier --check . && stylelint '**/*.{css,scss}'",
+    "start": "parcel && npm run static",
+    "tests": "jest",
+    "tests:watch": "jest --watch",
+    "tests:e2e": "cypress open",
+    "tests:e2e:headless": "cypress run"
+  },
+  "source": [
+    "./src/index.html"
+  ],
+  "devDependencies": {
+    "eslint": "latest",
+    "prettier": "latest",
+    "stylelint": "latest",
+    "parcel": "latest",
+    "stylelint-config-standard": "latest",
+    "globals": "^15.14.0",
+    "jest": "latest",
+    "jest-environment-jsdom": "latest",
+    "@babel/preset-env": "latest",
+    "@testing-library/dom": "latest",
+    "@testing-library/user-event": "latest",
+    "cypress": "latest"
+  }
+}
