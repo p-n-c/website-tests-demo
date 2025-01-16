@@ -10,7 +10,8 @@
     "tests": "jest",
     "tests:watch": "jest --watch",
     "tests:e2e": "cypress open",
-    "tests:e2e:headless": "cypress run"
+    "tests:e2e:headless": "cypress run",
+    "build": "npm run tests & npm run tests:e2e"
   },
   "source": [
     "./src/index.html"
